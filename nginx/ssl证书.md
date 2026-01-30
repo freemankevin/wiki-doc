@@ -2,7 +2,7 @@
 title: SSL证书
 description: Nginx - SSL证书
 published: true
-date: 2026-01-30T06:47:50.146Z
+date: 2026-01-30T06:48:15.738Z
 tags: openssl, acme, ssl
 editor: markdown
 dateCreated: 2026-01-30T01:32:13.128Z
@@ -33,7 +33,7 @@ chmod +x renew-ssl-cert.sh
 如果需要 `.cert` 格式，用这一行命令：
 
 ```bash
-openssl req -x509 -newkey rsa:2048 -keyout localhost.key -out localhost.cert -days 365 -nodes -subj "/C=CN/ST=State/L=City/O=Org/CN=localhost"
+openssl req -x509 -newkey rsa:2048 -keyout localhost.key -out localhost.cert -days 3650 -nodes -subj "/C=CN/ST=State/L=City/O=Org/CN=localhost"
 ```
 
 这样就会生成 `cert.cert`（证书）和 `key.key`（私钥）。
